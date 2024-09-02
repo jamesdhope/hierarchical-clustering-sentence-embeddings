@@ -71,7 +71,7 @@ plt.tight_layout()
 plt.show()
 
 # Cut the dendrogram into a specified number of clusters
-num_clusters = 5
+num_clusters = 3
 cluster_labels = fcluster(linked, num_clusters, criterion='maxclust')
 
 # Group sentences by cluster
