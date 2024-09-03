@@ -1,4 +1,4 @@
-# Hierarchical Clustering of Sentences with Keyword Extraction
+# Higher Order Semantics with Hierarchical Clustering of Sentences Embeddings
 
 This project demonstrates how to perform hierarchical clustering on a set of sentences using sentence embeddings and visualize the results with a dendrogram. Additionally, it extracts semantically important keywords for each cluster to provide insights into the themes represented by the clusters. The final output includes a dendrogram image saved to a file, with keywords annotated at relevant forks, allowing for easy interpretation of the clusters.
 
