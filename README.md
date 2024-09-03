@@ -6,6 +6,8 @@ This project demonstrates how to perform hierarchical clustering on a set of sen
 
 The code uses the `SentenceTransformer` library to generate embeddings for sentences and individual words. It then performs hierarchical clustering using these embeddings and visualizes the clusters with a dendrogram. For each cluster, the code identifies the most semantically relevant keywords by calculating the cosine similarity between the sentence embeddings and word embeddings. The dendrogram is annotated with these keywords to provide a clear understanding of the themes within each cluster, and it is saved as an image file.
 
+The code includes an example set of sentences related to various topics such as technology, environment, sports, and culture. You can modify this list to explore different datasets.
+
 ![Dendrogram with Keywords](dendrogram_with_keywords.png)
 
 ## Features
@@ -51,10 +53,6 @@ pip install sentence-transformers scipy matplotlib numpy scikit-learn
 5. **Extract Keywords**: For each cluster, the code calculates the mean embedding and finds the top words with the highest cosine similarity to this embedding, identifying them as keywords.
 
 6. **Print Results**: The keywords and corresponding sentences for each cluster are printed to the console.
-
-## Example
-
-The code includes an example set of sentences related to various topics such as technology, environment, sports, and culture. You can modify this list to explore different datasets.
 
 ## License
 
