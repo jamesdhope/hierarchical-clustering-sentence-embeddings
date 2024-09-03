@@ -6,6 +6,8 @@ This project demonstrates how to perform hierarchical clustering on a set of sen
 
 The code uses the `SentenceTransformer` library to generate embeddings for sentences and individual words. It then performs hierarchical clustering using these embeddings and visualizes the clusters with a dendrogram. For each cluster, the code identifies the most semantically relevant keywords by calculating the cosine similarity between the sentence embeddings and word embeddings. The dendrogram is annotated with these keywords to provide a clear understanding of the themes within each cluster, and it is saved as an image file.
 
+![Dendrogram with Keywords](dendrogram_with_keywords.png)
+
 ## Features
 
 - **Sentence Embeddings**: Converts sentences into dense vector representations using a pre-trained transformer model (`all-MiniLM-L6-v2`).
