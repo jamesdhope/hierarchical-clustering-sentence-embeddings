@@ -1,17 +1,18 @@
 # Hierarchical Clustering of Sentences with Keyword Extraction
 
-This project demonstrates how to perform hierarchical clustering on a set of sentences using sentence embeddings and visualize the results with a dendrogram. Additionally, it extracts semantically important keywords for each cluster to provide insights into the themes represented by the clusters.
+This project demonstrates how to perform hierarchical clustering on a set of sentences using sentence embeddings and visualize the results with a dendrogram. Additionally, it extracts semantically important keywords for each cluster to provide insights into the themes represented by the clusters. The final output includes a dendrogram image saved to a file, with keywords annotated at relevant forks, allowing for easy interpretation of the clusters.
 
 ## Overview
 
-The code uses the `SentenceTransformer` library to generate embeddings for sentences and individual words. It then performs hierarchical clustering using these embeddings and visualizes the clusters with a dendrogram. For each cluster, the code identifies the most semantically relevant keywords by calculating the cosine similarity between the sentence embeddings and word embeddings.
+The code uses the `SentenceTransformer` library to generate embeddings for sentences and individual words. It then performs hierarchical clustering using these embeddings and visualizes the clusters with a dendrogram. For each cluster, the code identifies the most semantically relevant keywords by calculating the cosine similarity between the sentence embeddings and word embeddings. The dendrogram is annotated with these keywords to provide a clear understanding of the themes within each cluster, and it is saved as an image file.
 
 ## Features
 
-- **Sentence Embeddings**: Converts sentences into dense vector representations using a pre-trained transformer model.
-- **Hierarchical Clustering**: Groups sentences into clusters based on their semantic similarity.
-- **Dendrogram Visualization**: Displays the hierarchical structure of the clusters in a tree-like diagram.
-- **Keyword Extraction**: Identifies and prints semantically important keywords for each cluster to the console.
+- **Sentence Embeddings**: Converts sentences into dense vector representations using a pre-trained transformer model (`all-MiniLM-L6-v2`).
+- **Hierarchical Clustering**: Groups sentences into clusters based on their semantic similarity using the Ward method.
+- **Dendrogram Visualization**: Displays the hierarchical structure of the clusters in a tree-like diagram, with keywords annotated at each significant fork.
+- **Keyword Extraction**: Identifies and prints semantically important keywords for each cluster.
+- **Plot Saving**: Saves the dendrogram as an image file with annotated keywords for easy reference.
 
 ## Requirements
 
@@ -20,11 +21,10 @@ The code uses the `SentenceTransformer` library to generate embeddings for sente
 - `scipy`
 - `matplotlib`
 - `numpy`
-- `sklearn`
+- `scikit-learn`
 
 You can install the required packages using pip:
-
-```bash
+```
 pip install sentence-transformers scipy matplotlib numpy scikit-learn
 ```
 

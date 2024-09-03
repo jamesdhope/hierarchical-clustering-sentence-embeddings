@@ -89,4 +89,6 @@ fig.text(0.01, 0.5, legend_text, fontsize=7, verticalalignment='center', horizon
 # Adjust layout to ensure the plot and legend fit nicely
 plt.subplots_adjust(left=0.55, right=0.95)
 
+plt.savefig("dendrogram_with_keywords.png", dpi=300, bbox_inches='tight')
+
 plt.show()
